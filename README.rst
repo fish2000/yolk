@@ -1,9 +1,9 @@
-yolk
-====
+yolk1977
+========
 
-.. image:: https://travis-ci.org/myint/yolk.svg?branch=develop
-    :target: https://travis-ci.org/myint/yolk
-    :alt: Build status
+.. .. image:: https://travis-ci.org/myint/yolk.svg?branch=develop
+..     :target: https://travis-ci.org/fish2000/yolk
+..     :alt: Build status
 
 .. contents::
 
@@ -13,7 +13,7 @@ Installation
 
 ::
 
-    $ pip install --upgrade yolk3k
+    $ pip install --upgrade yolk1977
 
 
 Summary
@@ -21,8 +21,10 @@ Summary
 
 Yolk is a Python tool for obtaining information about installed Python packages
 and querying packages available on PyPI (Python Package Index). ``yolk3k``
-is a fork of the original ``yolk``. ``yolk3k`` add Python 3 support (while
-maintaining Python 2 support). It also adds additional features.
+is a fork of the original ``yolk``. ``yolk3k`` adds Python 3 support (while
+maintaining Python 2 support). It also adds additional features. ``yolk1977``
+is a fork of the ``yolk3k`` fork that fixes that annoying bug wherein a single
+glitchy URL-fetch status would interrupt the entirety of the ``yolk -U`` process.
 
 
 You can see which packages are active, non-active or in development mode and

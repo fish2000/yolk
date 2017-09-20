@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Miscellaneous functions.
 
 run_command borrowed from Cheesecake - See CREDITS.

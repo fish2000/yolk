@@ -1,5 +1,5 @@
 # PYTHON_ARGCOMPLETE_OK
-
+# -*- coding: utf-8 -*-
 """cli.
 
 Desc: Command-line tool for listing Python packages installed by setuptools,
@@ -1102,7 +1102,7 @@ def _updates(names, pypi, user_installs_only):
 
             width = terminal_width()
             if width:
-                print(u'\rChecking {}'.format(dist.project_name).ljust(width),
+                print(u'\rChecking package: {}…'.format(dist.project_name).ljust(width),
                       end='',
                       file=sys.stderr)
 

@@ -3,6 +3,7 @@ include COPYING
 include CREDITS
 include README.rst
 include setup.py
+exclude .gitignore
 exclude .travis.yml
 exclude Makefile
 exclude check_readme.bash

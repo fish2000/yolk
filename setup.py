@@ -17,13 +17,13 @@ def version():
 
 with open('README.rst') as readme:
     setup(
-        name='yolk3k',
+        name='yolk1977',
         license='BSD License',
         version=version(),
         description='Command-line tool for querying PyPI and Python packages '
                     'installed on your system.',
         long_description=readme.read(),
-        maintainer='Steven Myint',
+        maintainer='Alexander Bohn',
         author='Rob Cakebread',
         url='https://github.com/myint/yolk',
         keywords='PyPI,setuptools,cheeseshop,distutils,eggs,package,'
