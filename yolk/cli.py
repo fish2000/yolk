@@ -1093,9 +1093,11 @@ def _updates(names, pypi, user_installs_only):
     exception = None
 
     def worker_function(pkg):
-        for (dist, active) in yolklib.get_distributions(
-                'all', pkg,
-                yolklib.get_highest_installed(pkg)):
+        dist = None
+
+        for (dist, active) in yolklib.get_distributions('all',
+                                                         pkg,
+                                                         yolklib.get_highest_installed(pkg)):
 
             if exception:
                 return
@@ -1106,8 +1108,8 @@ def _updates(names, pypi, user_installs_only):
                       end='',
                       file=sys.stderr)
 
-            (project_name, versions) = pypi.query_versions_pypi(
-                dist.project_name)
+            (project_name, versions) = pypi.query_versions_pypi(dist.project_name)
+
         return (pkg, dist, project_name, versions)
 
     import multiprocessing
