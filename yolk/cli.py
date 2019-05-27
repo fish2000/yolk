@@ -1093,7 +1093,7 @@ def _updates(names, pypi, user_installs_only):
     exception = None
 
     def worker_function(pkg):
-        dist = None
+        dist = project_name = versions = None
 
         for (dist, active) in yolklib.get_distributions('all',
                                                          pkg,
