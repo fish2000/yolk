@@ -3,10 +3,10 @@
 from setuptools import setup
 import ast
 
-"""Installer for yolk."""
+""" Installer for yolk1977 """
 
 def version():
-    """Return version string."""
+    """ Return version string """
     with open('yolk/__init__.py') as input_file:
         for line in input_file:
             if line.startswith('__version__'):
@@ -33,14 +33,15 @@ with open('README.rst') as readme:
             'Programming Language :: Python :: 2',
             'Programming Language :: Python :: 2.7',
             'Programming Language :: Python :: 3',
-            'Programming Language :: Python :: 3.3',
             'Programming Language :: Python :: 3.4',
             'Programming Language :: Python :: 3.5',
             'Programming Language :: Python :: 3.6',
             'Programming Language :: Python :: 3.7',
+            'Programming Language :: Python :: 3.8',
             'Topic :: Software Development :: Libraries :: Python Modules',
         ],
         packages=['yolk'],
-        package_dir={'yolk': 'yolk'},
-        entry_points={'console_scripts': ['yolk = yolk.cli:main']}
+        package_dir={ 'yolk' : 'yolk' },
+        entry_points={'console_scripts': ['yolk1977 = yolk.cli:main',
+                                          'yolk = yolk.cli:main']}
     )
