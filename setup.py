@@ -1,11 +1,9 @@
 #!/usr/bin/env python
-
-"""Installer for yolk."""
-
+# -*- coding: utf-8 -*-
+from setuptools import setup
 import ast
 
-from setuptools import setup
-
+"""Installer for yolk."""
 
 def version():
     """Return version string."""
@@ -13,7 +11,6 @@ def version():
         for line in input_file:
             if line.startswith('__version__'):
                 return ast.parse(line).body[0].value.s
-
 
 with open('README.rst') as readme:
     setup(
@@ -25,7 +22,7 @@ with open('README.rst') as readme:
         long_description=readme.read(),
         maintainer='Alexander Bohn',
         author='Rob Cakebread',
-        url='https://github.com/myint/yolk',
+        url='https://github.com/fish2000/yolk',
         keywords='PyPI,setuptools,cheeseshop,distutils,eggs,package,'
                  'management',
         classifiers=[
@@ -39,6 +36,8 @@ with open('README.rst') as readme:
             'Programming Language :: Python :: 3.3',
             'Programming Language :: Python :: 3.4',
             'Programming Language :: Python :: 3.5',
+            'Programming Language :: Python :: 3.6',
+            'Programming Language :: Python :: 3.7',
             'Topic :: Software Development :: Libraries :: Python Modules',
         ],
         packages=['yolk'],
